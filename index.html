@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detecto - Analyseur de biais</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" id="logo" alt="Logo Detecto" />
+    <h1>Detecto</h1>
+    <p>Analyse automatique des biais journalistiques</p>
+</header>
+
+<main>
+    <textarea id="textInput" placeholder="Colle ici ton article à analyser..."></textarea>
+    <button id="analyzeBtn">Analyser l'article</button>
+
+    <!-- Loader -->
+    <div id="loader" class="hidden"></div>
+
+    <!-- Résultats -->
+    <section id="results" class="hidden">
+        <h2>Résultats</h2>
+
+        <!-- Jauge -->
+        <div id="gaugeContainer">
+            <div id="gaugeFill"></div>
+        </div>
+        <p id="percentageLabel">--%</p>
+
+        <!-- Analyse texte -->
+        <pre id="analysisOutput"></pre>
+    </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
